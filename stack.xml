@@ -1,0 +1,25 @@
+<stack>
+  <description brief="The ROS OpenNI project">
+  
+    ROS OpenNI is an open source project focused on the integration of the
+    PrimeSense sensors with ROS. 
+  
+  </description>
+  <author>Maintained by Vincent Rabaud vrabaud@willowgarage.com, Tully Foote tfoote@willowgarage.com</author>
+  <license>BSD</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/openni_kinect</url>
+  <depend stack="common_msgs" /> <!-- geometry_msgs, sensor_msgs, stereo_msgs -->
+  <depend stack="common_rosdeps" /> <!-- common_rosdeps -->
+  <depend stack="dynamic_reconfigure" /> <!-- dynamic_reconfigure -->
+  <depend stack="geometry" /> <!-- tf -->
+  <depend stack="image_common" /> <!-- camera_info_manager, image_transport -->
+  <depend stack="nodelet_core" /> <!-- nodelet -->
+  <depend stack="openni_camera" /> <!-- openni_camera -->
+  <depend stack="openni_launch" /> <!-- openni_launch -->
+  <depend stack="openni_tracker" /> <!-- openni_tracker -->
+  <depend stack="perception_pcl" /> <!-- pcl, pcl_ros -->
+  <depend stack="ros" /> <!-- roslib -->
+  <depend stack="ros_comm" /> <!-- roscpp, message_filters -->
+
+</stack>

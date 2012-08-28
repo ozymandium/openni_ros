@@ -1,0 +1,22 @@
+<package>
+  <description brief="openni">
+
+     Wrapper package for the 'openni-dev' rosdep. This package is deprecated
+     in Fuerte; compile directly against the system dependency instead. See
+     the wiki docs for migration instructions.
+
+  </description>
+  <author>Wim Meeussen</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/openni</url>
+
+  <export>
+    <cpp cflags="-I/usr/include/openni" lflags="-lOpenNI -lusb-1.0" />
+  </export>
+
+  <rosdep name="openni-dev"/>
+
+</package>
+
+

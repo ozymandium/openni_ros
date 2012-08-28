@@ -1,0 +1,42 @@
+
+<package>
+  <description brief="An OpenNI camera ROS driver">
+
+    Deprecated ROS driver for OpenNI depth cameras.
+
+  </description>
+
+  <author>Suat Gedikli, Patrick Mihelich, Radu Bogdan Rusu</author>
+
+  <license>BSD</license>
+
+  <url>http://ros.org/wiki/openni_camera_deprecated</url>
+
+  <review status="experimental" notes="beta"/>
+
+  <depend package="openni_camera" />
+
+  <depend package="camera_info_manager" />
+  <depend package="dynamic_reconfigure" />
+  <depend package="image_transport" />
+  <depend package="nodelet" />
+  <depend package="roscpp" />
+  <depend package="sensor_msgs" />
+
+  <!-- Following packages only required for old nodelet and launch files -->
+  <depend package="common_rosdeps" />
+  <depend package="pcl" />
+  <depend package="pcl_ros" />
+  <depend package="stereo_msgs" />
+  <depend package="tf" />
+
+  <rosdep name="eigen" />
+
+  <export>
+    <cpp lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -lopenni_deprecated" />
+    <nodelet plugin="${prefix}/openni_nodelets.xml" />
+  </export>
+
+  <platform os="ubuntu" version="10.04"/>
+  <platform os="ubuntu" version="10.10"/>
+</package>

@@ -1,0 +1,26 @@
+<package>
+  <description brief="nite">
+
+    Meta package to pull in the dependencies for NITE and export the
+    necessary build flags. This package is deprecated in Fuerte;
+    compile directly against the system dependency instead. See the
+    wiki docs for migration instructions.
+
+  </description>
+  <author>Tully Foote</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/nite</url>
+  <depend package="openni"/>
+
+  <rosdep name="nite-dev"/>
+  <rosdep name="ps-engine"/>
+
+  <export>
+    <cpp cflags="-I/usr/include/nite"/>
+  </export>
+
+
+</package>
+
+
