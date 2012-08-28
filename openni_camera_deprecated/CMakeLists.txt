@@ -5,8 +5,9 @@ set (ROS_BUILD_TYPE RelWithDebInfo)
 rosbuild_init ()
 rosbuild_add_boost_directories ()
 
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 include_directories(${EIGEN_INCLUDE_DIRS})
-include_directories(${ROS_PACKAGE_PATH})
+include_directories(${Eigen_INCLUDE_DIRS})
 find_package(Eigen REQUIRED)
 
 set (EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
