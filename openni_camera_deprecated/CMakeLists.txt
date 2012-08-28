@@ -5,8 +5,9 @@ set (ROS_BUILD_TYPE RelWithDebInfo)
 rosbuild_init ()
 rosbuild_add_boost_directories ()
 
-find_package(Eigen REQUIRED)
 include_directories(${EIGEN_INCLUDE_DIRS})
+include_directories(${ROS_PACKAGE_PATH})
+find_package(Eigen REQUIRED)
 
 set (EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
